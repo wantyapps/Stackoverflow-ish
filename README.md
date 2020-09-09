@@ -1,3 +1,3 @@
 # _PROJECT1_
 
-## Still working on it
+## This is a project written in Go and Swift
