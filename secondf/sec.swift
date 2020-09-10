@@ -6,11 +6,15 @@ func calculatenumber(_ num: Int) -> String {
 }
 
 func run() -> Bool {
-	if calculatenumber(4) == "25" {
+	if calculatenumber(5) == "25" {
 		return true
 	} else {
 		return false
 	}
 }
 
-print(run())
+
+// I was supposed to do a Command-Line-Argument Parser here, but there is no Internet, so I can't research about how to do this... :D
+// Ha! I can do it with Go! Go: 1 Swift: 0
+
+
