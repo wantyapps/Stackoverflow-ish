@@ -5,6 +5,14 @@ import (
 	"os"
 )
 
+func usage() {
+	var script = os.Args[0]
+	fmt.Println("Usage:")
+	fmt.Println("--------------------------")
+	fmt.Println(script + " [-c] / [--control]")
+	fmt.Println(script + " [-c] / [--control] [-v] / [--verbose]")
+}
+
 func run(argg string) {
 	if argg == "default" {
 		if len(os.Args[1:]) > 0 {
@@ -17,6 +25,8 @@ func run(argg string) {
 					}
 				}
 			}
+		} else {
+			usage()
 		}
 	}
 }
