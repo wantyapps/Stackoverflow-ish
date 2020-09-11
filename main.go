@@ -21,7 +21,7 @@ func run(argg string) {
 				if len(os.Args[1:]) > 1 {
 					if os.Args[1:][1] == "-v" || os.Args[1:][1] == "--verbose" {
 						fmt.Println("Control in Verbose Mode")
-						fmt.Println("Turning on Verbose mode...")
+						fmt.Println("Turning on Verbose Mode...")
 					}
 				}
 			}
@@ -32,5 +32,5 @@ func run(argg string) {
 }
 
 func main() {
-	run("default") // Why didn't I just make the "run()" function the main function, and then not run it from here?
+	run("default") // Why didn't I just make the "run()" function the "main()" function, and then not run it from here?
 }
