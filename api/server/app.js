@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 
 app.get("/api", (req, res) => {
 	if ( req.headers.username == "wantyapps" && req.headers.password == "pass123" ) {
-		res.send("Hello, wantyapps!");
+		res.send('{"username": "wantyapps", "password": "oao"}');
 	} else {
 		res.send("Incorrect username or password.");
 	};
