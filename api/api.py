@@ -1,12 +1,8 @@
 import requests
-response = requests.get('http://localhost:5000/api')
-if str(response) ==  "<Response [200]>":
-    print("Server is up.")
-    response = requests.get("http://localhost:5000/api", headers = {
-        "X-RapidAPI-Host": "alexnormand-dino-ipsum.p.rapidapi.com",
-        "X-RapidAPI-Key": "4xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    }
-)
+try:    
+    response = requests.get("http://localhost:5000/api", headers = { "username": "wantyapps", "password": "pass123" } )
+except requests.exceptions.ConnectionError:
+    response = False
+    print("Connection Error.")
+if response:    
     print(response.text)
-else:
-    print("bad")
