@@ -1,3 +1,4 @@
 .vscode/
 api/server/node_modules/
 api/server/package-lock.json
+api/data.json
