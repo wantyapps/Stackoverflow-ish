@@ -11,7 +11,7 @@ if response:
     data = json.loads(response.text)
     if os.path.isfile("data.json"):
         with open("data.json", "a") as f:
-            f.write("\n" + str(data))
+            f.write("\n" + str(data).replace("'", '"'))
     else:
         with open("data.json", "a") as f:
-            f.write(str(data))
+            f.write(str(data).replace("'", '"'))
