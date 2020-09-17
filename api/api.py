@@ -15,3 +15,5 @@ if response:
     else:
         with open("data.json", "a") as f:
             f.write(str(data).replace("'", '"'))
+
+# I want a colorprint here of the data...
