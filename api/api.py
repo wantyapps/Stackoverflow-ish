@@ -2,14 +2,6 @@ import requests
 import json
 import os
 
-def read(): # only when the file is accepted as open.
-    i = 0
-    with open("data.json", "r") as f:
-        for line in f:
-            i += 1
-        with open("data.json", "r") as f:
-            print("{} | {}".format(i, line))
-
 try:    
     response = requests.get("http://localhost:5000/api", headers = { "username": "wantyapps", "password": "pass123" } )
 except requests.exceptions.ConnectionError:
