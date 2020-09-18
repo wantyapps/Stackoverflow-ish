@@ -5,7 +5,14 @@ import sys
 
 if len(sys.argv) == 2:
     if sys.argv[1] == "--debug" or sys.argv[1] == "-d":
-        print("DEBUG")
+        print("[API] Entering debug mode...")
+        try:
+            response = requests.get("http://localhost:5000/api", headers = { "username": "wantyapps", "password": "pass123" } )
+        except requests.exceptions.ConnectionError:
+            response = False
+            print("[API] Connection error")
+        if response:
+            print("[API] Response: {}".format(response.text))
 else:
 
     try:    
