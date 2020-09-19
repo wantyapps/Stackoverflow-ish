@@ -12,7 +12,7 @@ if len(sys.argv) == 3:
             response = False
             print("[API] Connection error")
         if response:
-            print("[API] Response: {}".format(response.text))
+            print("[API] Response: {}".format(response.text).replace("\n", ""))
 else:
 
     try:    
