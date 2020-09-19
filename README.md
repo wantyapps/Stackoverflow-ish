@@ -6,5 +6,4 @@ those from the server.
 
 ## ToDo
 
-- Add a debugging option for the rundebug.go, where the "-d" / "--debug"
-CLI-Arguments.
+- Nothing to do!
