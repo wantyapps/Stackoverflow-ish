@@ -10,17 +10,17 @@ if len(sys.argv) == 3:
             response = requests.get("http://localhost:5000/api", headers = { "username": "wantyapps", "password": sys.argv[2].replace("\n", "") } )
         except requests.exceptions.ConnectionError:
             response = False
-            print("[API] Connection error")
+            print("[\033[91m!\033[0m] [API] Connection error")
         if response:
-            print("[API] Response: {}".format(response.text).replace("\n", ""))
+            print("[\033[92m*\033[0m] Response: {}".format(response.text).replace("\n", ""))
 else:
 
     try:    
         response = requests.get("http://localhost:5000/api", headers = { "username": "wantyapps", "password": "pass123" } )
     except requests.exceptions.ConnectionError:
         response = False
-        print("Connection Error.")
-    if response:    
+        print("[\033[91m!\033[0m] [API] Connection Error.")
+    if response:
         data = json.loads(response.text)
         if os.path.isfile("data.json"):
             with open("data.json", "a") as f:
