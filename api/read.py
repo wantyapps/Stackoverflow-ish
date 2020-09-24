@@ -6,7 +6,7 @@ def read(): # Only when the file is accepted as open.
         with open("data.json", "r") as f:
             for line in f:
                 i += 1
-                print("{} | {}".format(i, line))
+                print("{} | {}".format(i, line).replace("\n", ""))
     else:
         print("File not found. Create one using the API with \"python3 api.py\" and make sure the server is running.")
 
