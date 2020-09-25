@@ -32,3 +32,5 @@ func main() {
 		fmt.Println("[\033[91mDEBUG\033[0m] ERROR")
 	}
 }
+
+// TEST
