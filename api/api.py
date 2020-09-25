@@ -2,6 +2,7 @@ import requests
 import json
 import os
 import sys
+import read
 
 if len(sys.argv) == 3:
     if sys.argv[1] == "--debug" or sys.argv[1] == "-d":

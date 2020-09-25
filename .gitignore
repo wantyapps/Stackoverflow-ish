@@ -3,3 +3,4 @@ api/server/node_modules/
 api/server/package-lock.json
 api/data.json
 data.json
+api/read/__pycache__/
