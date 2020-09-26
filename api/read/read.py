@@ -12,4 +12,5 @@ def read(): # Only when the file is accepted as open.
 
 
 if __name__ == "__main__":
-    read()
+    print("This is not the main script. Please run the main script: \033[91m../api.py\033[0m")
+    exit(1)
