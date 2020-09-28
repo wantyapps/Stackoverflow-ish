@@ -1,6 +1,7 @@
 .vscode/
-api/server/node_modules/
-api/server/package-lock.json
-api/data.json
+src/api/server/node_modules/
+src/api/server/package-lock.json
+src/api/data.json
+src/data.json
 data.json
-api/read/__pycache__/
+src/api/read/__pycache__/
