@@ -32,9 +32,10 @@ else:
         response = requests.get("http://localhost:5000/api", headers = { "username": "wantyapps", "password": "pass123" } )
     except requests.exceptions.ConnectionError:
         response = False
-        print("[\033[91m!\033[0m] [API] Connection Error.")
+        print("[API] Connection Error.")
     if response:
         data = json.loads(response.text)
+        print(str(data).replace("'", '"'))
         if os.path.isfile("data.json"):
             with open("data.json", "a") as f:
                 f.write("\n" + str(data).replace("'", '"'))
