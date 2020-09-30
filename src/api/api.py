@@ -6,7 +6,6 @@ from read import read
 
 if len(sys.argv) == 3:
     if sys.argv[1] == "--debug" or sys.argv[1] == "-d":
-        #print("[API] Entering debug mode...")
         try:
             response = requests.get("http://localhost:5000/api", headers = { "username": "wantyapps", "password": sys.argv[2].replace("\n", "") } )
         except requests.exceptions.ConnectionError:
@@ -14,17 +13,22 @@ if len(sys.argv) == 3:
             print("[\033[91m!\033[0m] [API] Connection error")
         if response:
             print("[\033[92m*\033[0m] Response: {}".format(response.text).replace("\n", ""))
-            """
+    elif sys.argv[1] == "--rdebug" or sys.argv[1] == "-rd":
+        try:
+            response = requests.get("http://localhost:5000/api", headers = { "username": "wantyapps", "password": sys.argv[2].replace("\n", "") } )
+        except requests.exceptions.ConnectionError:
+            response = False
+            print("[\033[91m!\033[0m] [API] Connection error")
+        if response:
+            print("[\033[92m*\033[0m] Response: {}".format(response.text).replace("\n", ""))
             readatain = input("Read JSON Data from database? [y/n]: ")
             if readatain == "y":
-                read.read()
-                break
-            elif readatain == "n":
                 print("[\033[92m*\033[0m] ACCEPTED")
-                break
+                read.read()
+            elif readatain == "\n":
+                print("[\033[92m*\033[0m] ACCEPTED")
             else:
-            print("[\033[91m!\033[0m] NOT ACCEPTED")
-            """
+                print("[\033[92m*\033[0m] ACCEPTED")
 
 else:
 
@@ -43,4 +47,3 @@ else:
             with open("data.json", "a") as f:
                 f.write(str(data).replace("'", '"'))
 
-# I want a colorprint here of the data...
