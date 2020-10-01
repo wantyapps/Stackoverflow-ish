@@ -15,7 +15,7 @@ func main() {
 	fmt.Print("DEBUG KEY: ")
 	key, _ := reader.ReadString('\n')
 
-	out, err := exec.Command("python3", "api.py", "-d", key).Output()
+	out, err := exec.Command("python3", "./api.py", "-d", key).Output()
 
 	var finalout string = strings.Replace(string(out), "\n", "", -1)
 	if err != nil {

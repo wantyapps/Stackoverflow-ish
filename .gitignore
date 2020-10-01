@@ -5,3 +5,5 @@ src/api/data.json
 src/data.json
 data.json
 src/api/read/__pycache__/
+src/read/__pycache__/
+bin/read/__pycache__/
