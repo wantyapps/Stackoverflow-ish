@@ -25,8 +25,6 @@ if len(sys.argv) == 3:
             if readatain == "y":
                 print("[\033[92m*\033[0m] ACCEPTED")
                 read.read()
-            elif readatain == "\n":
-                print("[\033[92m*\033[0m] ACCEPTED")
             else:
                 print("[\033[92m*\033[0m] ACCEPTED")
 

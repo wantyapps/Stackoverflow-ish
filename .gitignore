@@ -8,3 +8,5 @@ src/api/read/__pycache__/
 src/read/__pycache__/
 bin/read/__pycache__/
 todo.md
+
+.glab-cli
