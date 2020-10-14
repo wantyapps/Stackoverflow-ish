@@ -29,7 +29,9 @@ if len(sys.argv) == 3:
                 print("[\033[92m*\033[0m] ACCEPTED")
             else:
                 print("[\033[92m*\033[0m] ACCEPTED")
-
+elif len(sys.argv) == 2:
+    if sys.argv[1] == "--list" or sys.argv[1] == "-l":
+        read.read()
 else:
 
     try:    

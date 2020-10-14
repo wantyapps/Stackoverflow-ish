@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("NOT the main route.");
+    res.send("Hello Gaddy!");
 });
 
 app.get("/api", (req, res) => {
