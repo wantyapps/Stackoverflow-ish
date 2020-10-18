@@ -10,6 +10,13 @@ def read(): # Only when the file is accepted as open.
     else:
         print("File not found. Create one using the API with \"python3 api.py\" and make sure the server is running.")
 
+class reader:
+    def __init__(self):
+        self.reader = "<READER OBJECT CREATED BY MODULE READ>"
+    def get(self):
+        print("GETDATA")
+        print(self.reader)
+
 
 if __name__ == "__main__":
     print("This is not the main script. Please run the main script: \033[91m../api.py\033[0m")
