@@ -4,9 +4,6 @@ import os
 import sys
 from read import read
 
-readerfn = read.reader()
-readerfn.get()
-
 if len(sys.argv) == 3:
     if sys.argv[1] == "--debug" or sys.argv[1] == "-d":
         try:
