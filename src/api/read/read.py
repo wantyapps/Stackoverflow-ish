@@ -12,10 +12,9 @@ def read(): # Only when the file is accepted as open.
 
 class reader:
     def __init__(self):
-        self.reader = "<READER OBJECT CREATED BY MODULE READ>"
+        self.data = "Reader"
     def get(self):
-        print("GETDATA")
-        print(self.reader)
+        return self.data
 
 
 if __name__ == "__main__":
