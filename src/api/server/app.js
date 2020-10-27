@@ -2,8 +2,10 @@ const express = require("express");
 const app = express();
 const path = require("path")
 
+app.use(express.static(__dirname + "/public"))
+
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname + "/main.html"));
+    res.sendFile(path.join(__dirname + "/public/main.html"));
 });
 
 app.get("/api", (req, res) => {
@@ -12,6 +14,10 @@ app.get("/api", (req, res) => {
 	} else {
 		res.send("Incorrect username or password.");
 	};
+});
+
+app.get("/about", (req, res) => {
+	res.sendFile(path.join(__dirname + "/public/about.html"));
 });
 
 const PORT = 5000;
