@@ -1,0 +1,48 @@
+body {
+	background-color: #fff;
+}
+
+.navBar {
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+	display: block;
+}
+
+.homeBtn {
+	display: inline;
+	float: left;
+}
+
+.aboutBtn {
+	display: inline;
+	float: left;
+}
+
+.homeLink {
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+	color: #e9efe6;
+	background-color: #333;
+}
+
+.aboutLink {
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+	color: #e9efe6;
+	background-color: #333;
+}
+
+.title {
+	position: absolute;
+	top: 0%;
+	left: 43%;
+}
+
+.wantyappsTeamPara {
+	position: absolute;
+	top: 10%;
+	left: 43%;
+	font-size: 20px;
