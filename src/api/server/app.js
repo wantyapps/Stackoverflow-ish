@@ -16,6 +16,10 @@ app.get("/api", (req, res) => {
 	};
 });
 
+app.get("/about", (req, res) => {
+	res.sendFile(path.join(__dirname + "/public/about.html"));
+});
+
 const PORT = 5000;
 
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
