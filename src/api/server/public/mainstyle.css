@@ -40,3 +40,9 @@ body {
 	top: 0%;
 	left: 43%;
 }
+
+.example {
+	background-color: #e4e6e8;
+	width: 210px;
+	border-radius: 5px;
+}
