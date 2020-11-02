@@ -6,6 +6,6 @@ those from the server.
 
 ## ToDo
 
-- Nothing to do!
+- NavBar: Make some changes
 
 More info can be found in `Stackoverflow-ish.md`.
