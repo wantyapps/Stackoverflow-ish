@@ -1,5 +1,6 @@
 body {
 	background-color: #fff;
+	font-family: Ubuntu;
 }
 
 .navBar {
@@ -42,7 +43,10 @@ body {
 }
 
 .example {
+	margin-top: 30px;
 	background-color: #e4e6e8;
 	width: 210px;
 	border-radius: 5px;
+	width: 250px;
+	padding: 10px;
 }
