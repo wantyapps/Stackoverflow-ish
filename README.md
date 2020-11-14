@@ -6,6 +6,4 @@ those from the server.
 
 ## ToDo
 
-- NavBar: Make some changes
-
 More info can be found in `Stackoverflow-ish.md`.
