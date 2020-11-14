@@ -46,3 +46,10 @@ body {
 	top: 10%;
 	left: 43%;
 	font-size: 20px;
+}
+
+.mission {
+	position: absolute;
+	top: 20%;
+	left: 35%;
+}
